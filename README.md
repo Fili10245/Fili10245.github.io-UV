@@ -100,4 +100,3 @@ Este sitio se publica usando GitHub Pages desde la rama `main`.
 
 Uso educativo.
 
-## 📁 Estructura del repositorio
