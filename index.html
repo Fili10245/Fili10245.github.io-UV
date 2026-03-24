@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prof. Fili | Cursos</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+/* HEADER */
+header {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    border-right: 1px solid black;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+/* COURSE BLOCK */
+.course {
+    margin-bottom: 50px;
+}
+
+.course h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+/* WEEK */
+.week {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.week h4 {
+    margin: 0 0 10px 0;
+}
+
+/* LINKS */
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prof. Fili</h1>
+    <p>Ingeniería | Portal Académico</p>
+</header>
+
+<nav>
+    <a href="#momentum">Momentum</a>
+    <a href="#fluidos">Fluidos</a>
+    <a href="#numericos">Numéricos</a>
+</nav>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <h3>Cursos</h3>
+    <a href="#momentum">Transferencia de Momentum</a>
+    <a href="#fluidos">Mecánica de Fluidos</a>
+    <a href="#numericos">Métodos Numéricos</a>
+
+    <h3>Recursos</h3>
+    <a href="#">Programa del curso</a>
+    <a href="#">Bibliografía</a>
+    <a href="#">Software</a>
+</aside>
+
+<!-- MAIN -->
+<main>
+
+<!-- MOMENTUM -->
+<section id="momentum" class="course">
+    <h2>Fundamentos de Transferencia de Momentum</h2>
+
+    <div class="week">
+        <h4>Semana 1: Conceptos básicos</h4>
+        <p>Definición de esfuerzo, viscosidad y leyes fundamentales.</p>
+        <div class="links">
+            <a href="transferencia-calor-masa.md">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Tarea</a>
+        </div>
+    </div>
+
+    <div class="week">
+        <h4>Semana 2: Ecuaciones de transporte</h4>
+        <p>Formulación diferencial y balances de cantidad de movimiento.</p>
+        <div class="links">
+            <a href="#">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Ejercicios</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- FLUIDOS -->
+<section id="fluidos" class="course">
+    <h2>Mecánica de Fluidos</h2>
+
+    <div class="week">
+        <h4>Semana 1: Propiedades de fluidos</h4>
+        <p>Densidad, viscosidad y comportamiento físico.</p>
+        <div class="links">
+            <a href="fenomenos-superficie.md">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Tarea</a>
+        </div>
+    </div>
+
+    <div class="week">
+        <h4>Semana 2: Estática de fluidos</h4>
+        <p>Presión, fuerzas y equilibrio.</p>
+        <div class="links">
+            <a href="#">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Ejercicios</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- NUMERICOS -->
+<section id="numericos" class="course">
+    <h2>Métodos Numéricos</h2>
+
+    <div class="week">
+        <h4>Semana 1: Raíces de ecuaciones</h4>
+        <p>Métodos de bisección, Newton-Raphson.</p>
+        <div class="links">
+            <a href="simulacion-optimizacion.md">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Código</a>
+        </div>
+    </div>
+
+    <div class="week">
+        <h4>Semana 2: Sistemas de ecuaciones</h4>
+        <p>Métodos directos e iterativos.</p>
+        <div class="links">
+            <a href="#">Notas</a>
+            <a href="#">PDF</a>
+            <a href="#">Ejercicios</a>
+        </div>
+    </div>
+
+</section>
+
+</main>
+</div>
+
+<footer>
+    © 2026 Prof. Fili | Universidad Veracruzana
+</footer>
+
+</body>
+</html>
