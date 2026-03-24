@@ -6,7 +6,7 @@ Sitio web académico desarrollado para organizar y compartir materiales de curso
 
 Accede al portal en:
 
-👉 https://fili10245.github.io/uv/
+👉 https://fili10245.github.io/fcq/
 
 ---
 
